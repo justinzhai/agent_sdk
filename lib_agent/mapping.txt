@@ -1,0 +1,222 @@
+# compiler: R8
+# compiler_version: 4.0.52
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.1"}
+# pg_map_id: 2ed6723
+# pg_map_hash: SHA-256 2ed6723d608a7e22ca9dc9c9332542b164a9e853fbffecd0dbf07a13a2765325
+com.lg.biz.AgentManager -> a.a:
+# {"id":"sourceFile","fileName":"AgentManager.kt"}
+    com.lg.biz.AgentManager INSTANCE -> a
+    boolean inited -> b
+    1:34:void init(android.content.Context,java.lang.String,java.lang.String,com.z.s.ISLoadCallBack):22:55 -> a
+com.lg.biz.LoginAgent -> a.b:
+# {"id":"sourceFile","fileName":"LoginAgent.kt"}
+    android.content.Context mContext -> a
+    com.lg.domain.LoginNode lnode -> c
+    int reloadInterval -> e
+    java.lang.String threadName -> b
+    boolean isStart -> d
+    1:12:void <init>(android.content.Context,com.lg.domain.LoginNode):10:21 -> <init>
+    1:2:void setStart(boolean):29:30 -> a
+    3:18:void connect():38:53 -> a
+    1:1:void startLogin():34:34 -> b
+com.lg.biz.VpsAgent -> a.c:
+# {"id":"sourceFile","fileName":"VpsAgent.kt"}
+    java.util.Map vpsThreadMap -> b
+    com.lg.biz.VpsAgent$Companion Companion -> a
+    boolean configRequestThreadStop -> c
+    1:1:void <clinit>():22:22 -> <clinit>
+    1:1:boolean access$getConfigRequestThreadStop$cp():10:10 -> a
+    1:1:java.util.Map access$getVpsThreadMap$cp():10:10 -> b
+com.lg.biz.VpsAgent$Companion -> a.c$a:
+# {"id":"sourceFile","fileName":"VpsAgent.kt"}
+    1:1:boolean getConfigRequestThreadStop():23:23 -> a
+    1:1:java.util.Map getVpsThreadMap():22:22 -> b
+    1:2:void start():18:19 -> c
+com.lg.biz.VpsAgent$ConfigRequestThread -> a.c$b:
+# {"id":"sourceFile","fileName":"VpsAgent.kt"}
+    1:1:void <init>():34:34 -> <init>
+    1:73:void _run():46:118 -> a
+    74:96:void _run():105:127 -> a
+    97:110:void _run():110:123 -> a
+    111:111:void _run():115:115 -> a
+    112:128:void _run():111:127 -> a
+    1:3:void run():39:41 -> run
+com.lg.biz.VpsAgent$VpsThread -> a.c$c:
+# {"id":"sourceFile","fileName":"VpsAgent.kt"}
+    com.lg.domain.LoginNode node -> a
+    com.lg.biz.LoginAgent loginAgent -> b
+    1:6:void <init>(com.lg.domain.LoginNode):139:144 -> <init>
+    1:1:void stopRun():154:154 -> a
+    1:3:void run():148:150 -> run
+com.lg.config.Config -> b.a:
+# {"id":"sourceFile","fileName":"Config.kt"}
+    android.content.Context mContext -> b
+    com.z.s.ISLoadCallBack callback -> c
+    int SDK_VERSION_CODE -> f
+    int sdkVersionCode -> g
+    com.lg.config.Config INSTANCE -> a
+    java.lang.String mChannel -> e
+    java.lang.String mAppKey -> d
+    1:1:void <clinit>():26:26 -> <clinit>
+    1:1:void setMContext(android.content.Context):10:10 -> a
+    2:2:com.z.s.ISLoadCallBack getCallback():11:11 -> a
+    3:3:void setCallback(com.z.s.ISLoadCallBack):11:11 -> a
+    4:25:int getVersionCode(java.lang.String):32:53 -> a
+    26:53:int getVersionCode(java.lang.String):33:60 -> a
+    54:66:int getVersionCode(java.lang.String):34:46 -> a
+    1:1:java.lang.String getMAppKey():13:13 -> b
+    2:2:void setMAppKey(java.lang.String):13:13 -> b
+    1:1:java.lang.String getMChannel():14:14 -> c
+    2:2:void setMChannel(java.lang.String):14:14 -> c
+    1:1:android.content.Context getMContext():10:10 -> d
+com.lg.domain.ConfigResp -> c.a:
+# {"id":"sourceFile","fileName":"ConfigResp.kt"}
+    java.util.ArrayList loginAddrList -> c
+    java.lang.String message -> b
+    int result -> a
+    1:15:void <init>():4:18 -> <init>
+    1:1:void setResult(int):8:8 -> a
+    2:2:void setMessage(java.lang.String):13:13 -> a
+    3:3:java.util.ArrayList getLoginAddrList():18:18 -> a
+    4:4:void setLoginAddrList(java.util.ArrayList):18:18 -> a
+com.lg.domain.LoginNode -> c.b:
+# {"id":"sourceFile","fileName":"LoginNode.kt"}
+    java.lang.String url -> a
+    java.lang.String sign -> c
+    java.lang.String curl -> b
+    java.lang.String t -> d
+    1:1:void setCurl(java.lang.String):5:5 -> a
+    2:2:java.lang.String getSign():6:6 -> a
+    1:1:void setSign(java.lang.String):6:6 -> b
+    2:2:java.lang.String getT():7:7 -> b
+    1:1:java.lang.String getUrl():4:4 -> c
+    2:2:void setT(java.lang.String):7:7 -> c
+    1:1:void setUrl(java.lang.String):4:4 -> d
+com.lg.utils.ConfigUtil -> d.a:
+# {"id":"sourceFile","fileName":"ConfigUtil.kt"}
+    com.lg.utils.ConfigUtil INSTANCE -> a
+    1:20:com.lg.domain.ConfigResp configRequest():30:49 -> a
+    21:36:java.lang.String genConfigRequestBody(java.lang.String):92:107 -> a
+    1:4:java.lang.String getHost(java.lang.String):20:23 -> b
+    1:28:com.lg.domain.ConfigResp jsonToBean(java.lang.String):57:84 -> c
+com.lg.utils.CrashHandler -> d.b:
+    android.content.Context mContext -> c
+    java.lang.Thread$UncaughtExceptionHandler mDefaultCrashHandler -> b
+    java.lang.String PATH -> a
+    com.lg.utils.CrashHandler sInstance -> d
+    1:1:void <clinit>():41:41 -> <clinit>
+    1:1:void <init>():45:45 -> <init>
+    1:1:android.content.Context access$000(com.lg.utils.CrashHandler):32:32 -> a
+    2:2:com.lg.utils.CrashHandler getInstance():49:49 -> a
+    3:9:void init(android.content.Context):53:59 -> a
+    10:33:void dumpExceptionToSDCard(java.lang.Throwable):116:139 -> a
+    34:54:void dumpPhoneInfo(java.io.PrintWriter):145:165 -> a
+    void uploadExceptionToServer() -> b
+    1:8:boolean handleException(java.lang.Throwable):103:110 -> b
+    1:17:void uncaughtException(java.lang.Thread,java.lang.Throwable):72:88 -> uncaughtException
+com.lg.utils.CrashHandler$1 -> d.b$a:
+    com.lg.utils.CrashHandler this$0 -> a
+    1:1:void <init>(com.lg.utils.CrashHandler):103:103 -> <init>
+    1:3:void run():106:108 -> run
+com.lg.utils.EncryptUtils -> d.c:
+# {"id":"sourceFile","fileName":"EncryptUtils.kt"}
+    com.lg.utils.EncryptUtils INSTANCE -> a
+    byte[][] RELEASE_VPS_CONFIG_URL_ARRAY_HW -> b
+    byte[] DECODE_TABLE -> d
+    byte[] DEBUG_FILE_NAME -> c
+    1:5:void <clinit>():9:9 -> <clinit>
+    9:13:void <clinit>():13:13 -> <clinit>
+    17:20:void <clinit>():17:17 -> <clinit>
+    23:26:void <clinit>():20:20 -> <clinit>
+    29:32:void <clinit>():23:23 -> <clinit>
+    33:59:void <clinit>():8:34 -> <clinit>
+    60:60:void <clinit>():30:30 -> <clinit>
+    1:10:java.lang.String decode(byte[]):38:38 -> a
+    11:11:java.lang.String decode(byte[]):39:39 -> a
+    12:54:void decode(byte[],int,int,com.lg.utils.EncryptUtils$DecodeContext):51:93 -> a
+    55:56:void decode(byte[],int,int,com.lg.utils.EncryptUtils$DecodeContext):86:87 -> a
+    57:62:byte[] ensureBufferSize(int,com.lg.utils.EncryptUtils$DecodeContext):113:118 -> a
+    63:63:java.lang.String getVpsConfigUrl(int):123:123 -> a
+    64:64:java.lang.String getDebugFileName():128:128 -> a
+    1:10:int readResults(byte[],int,int,com.lg.utils.EncryptUtils$DecodeContext):100:109 -> b
+com.lg.utils.EncryptUtils$DecodeContext -> d.c$a:
+# {"id":"sourceFile","fileName":"EncryptUtils.kt"}
+    byte[] buffer -> b
+    boolean eof -> e
+    int modulus -> f
+    int readPos -> d
+    int pos -> c
+    int ibitWorkArea -> a
+    1:1:void setIbitWorkArea(int):131:131 -> a
+    2:2:byte[] getBuffer():133:133 -> a
+    3:3:void setBuffer(byte[]):133:133 -> a
+    4:4:void setEof(boolean):136:136 -> a
+    1:1:boolean getEof():136:136 -> b
+    2:2:void setModulus(int):138:138 -> b
+    1:1:int getIbitWorkArea():131:131 -> c
+    2:2:void setPos(int):134:134 -> c
+    1:1:void setReadPos(int):135:135 -> d
+    2:2:int getModulus():138:138 -> d
+    1:1:int getPos():134:134 -> e
+    1:1:int getReadPos():135:135 -> f
+com.lg.utils.FileUtils -> d.d:
+# {"id":"sourceFile","fileName":"FileUtils.kt"}
+    com.lg.utils.FileUtils INSTANCE -> a
+    1:4:java.lang.String readPidFile(android.content.Context):14:17 -> a
+    5:8:java.lang.String readFile(java.lang.String):30:33 -> a
+    9:13:java.io.File getDebugFile():45:49 -> a
+    14:26:java.io.File getDebugFile():48:60 -> a
+    boolean isSDExists() -> b
+com.lg.utils.MD5Util -> d.e:
+# {"id":"sourceFile","fileName":"MD5Util.kt"}
+    com.lg.utils.MD5Util INSTANCE -> a
+    1:9:java.lang.String getMD5(java.lang.String):13:21 -> a
+com.lg.utils.NetworkUtil -> d.f:
+# {"id":"sourceFile","fileName":"NetworkUtil.kt"}
+    java.lang.String macAddress -> b
+    com.lg.utils.NetworkUtil INSTANCE -> a
+    1:15:java.lang.String getMacAddress(android.content.Context):30:44 -> a
+    1:1:java.lang.Integer getNetworkState(android.content.Context):49:49 -> b
+com.lg.utils.QYLog -> d.g:
+# {"id":"sourceFile","fileName":"QYLog.kt"}
+    java.util.Properties p -> b
+    com.lg.utils.QYLog INSTANCE -> a
+    boolean isOpenLog -> c
+    boolean isDebugMode -> d
+    1:24:void <clinit>():27:50 -> <clinit>
+    25:31:void <clinit>():44:50 -> <clinit>
+    32:43:void <clinit>():48:59 -> <clinit>
+    1:4:void initDebugMode():65:68 -> a
+    5:6:void d(java.lang.String):137:138 -> a
+    7:8:void i(java.lang.String,java.lang.String):142:143 -> a
+    9:10:void e(java.lang.Throwable):165:166 -> a
+    11:12:void e(java.lang.String,java.lang.Throwable):170:171 -> a
+    1:4:void initLog():77:80 -> b
+    5:6:void e(java.lang.String):105:106 -> b
+    1:2:void i(java.lang.String):147:148 -> c
+com.lg.utils.SharedPreferencesUtils -> d.h:
+    1:1:android.content.SharedPreferences getSharedPreferences(android.content.Context):10:10 -> a
+    2:3:void putString(android.content.Context,java.lang.String,java.lang.String):19:20 -> a
+    4:4:java.lang.String getString(android.content.Context,java.lang.String):28:28 -> a
+com.lg.utils.TerminalInfoUtil -> d.i:
+# {"id":"sourceFile","fileName":"TerminalInfoUtil.kt"}
+    com.lg.utils.TerminalInfoUtil INSTANCE -> a
+    java.lang.String uuid -> b
+    1:12:java.lang.String getUnidFromFile(java.lang.String):52:63 -> a
+    13:25:void saveUnidToFile(java.lang.String,java.lang.String):75:87 -> a
+    26:47:java.lang.String getConfigOther(android.content.Context):92:113 -> a
+    48:51:java.io.File getConfigFilePath():126:129 -> a
+    1:15:java.lang.String getFakeImsi(android.content.Context):28:42 -> b
+com.z.s.Agent -> com.z.s.Agent:
+# {"id":"sourceFile","fileName":"Agent.kt"}
+    1:3:void <init>():8:10 -> <init>
+    1:1:void init(android.content.Context,com.z.s.ISLoadCallBack):15:15 -> init
+    2:2:void init(android.content.Context,java.lang.String,java.lang.String,com.z.s.ISLoadCallBack):20:20 -> init
+com.z.s.ISLoadCallBack -> com.z.s.ISLoadCallBack:
+# {"id":"sourceFile","fileName":"ISLoadCallBack.kt"}
+com.z.s.S -> com.z.s.S:
+    1:1:void <clinit>():7:7 -> <clinit>
+com.z.s.SLoadStatusCode -> com.z.s.SLoadStatusCode:
+# {"id":"sourceFile","fileName":"SLoadStatusCode.kt"}
+    1:3:void callBackSendCode(com.z.s.ISLoadCallBack,int):18:20 -> callBackSendCode

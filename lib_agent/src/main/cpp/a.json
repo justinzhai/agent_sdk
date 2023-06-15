@@ -1,0 +1,18 @@
+{
+  "result": 0,
+  "message": "成功",
+  "config": {
+    "vps": {
+      "connTimeout": 15,
+      "retry": 0,
+      "retryInterval": 0,
+      "host": "",
+      "port": 0
+    },
+    "socket": {
+      "connTimeout": 15,
+      "totalTimeout": 60
+    },
+    "reloadInterval": 2400
+  }
+}
